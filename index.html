@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Forlario de registro</title>
+	<link rel="icon" type="image/png" href="logo.png"/>
+	<link rel="stylesheet"  href="estilos.css">
+	<script src="validar.js"></script>
+</head>
+<body>
+	<div class="logo1">
+		<img src="logoumg.png" alt="logo">
+	<h1>Formulario para Registros</h1>
+	</div>
+
+	<form action="registrar.php" method="post" class="form_register" onsubmit="return validar();">
+		<h2 class="form_title">CREAR CUENTA</h2>
+		<div class="contiene_inputs">
+			<input type="text" id="nombre" name="nombre" placeholder="Nombre" class="input_48">
+			<input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="input_48" >
+			<input type="email" id="correo" name="correo" placeholder="Correo" class="input_100 " >
+			<input type="text" id="usuario" name="usuario" placeholder="Usuario" class="input_48" >
+			<input type="password" id="clave" name="clave" placeholder="Contraseña" class="input_48" >
+			<input type="text" id="telefono" name="telefono" placeholder="Teléfono" class="input_100" >
+			<input type="submit" value="Registrar" class="btn_registro" >
+			<p class="form_link"> ¿Datos guardados <a href="mostrar.php">Mostrar</a> </p>
+			<div>
+				<p class="form_link">Quieres eliminar datos <a href="delete.html">Eliminar</a> </p>
+			</div>
+			<div>
+				<p class="form_link">Quieres Actualizar Datos <a href="update.html">Actualizar</a> </p>
+			</div>
+           
+
+		</div>
+		
+	</form>
+
+</body>
+</html>
